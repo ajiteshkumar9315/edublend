@@ -29,7 +29,7 @@ const Aboutus = () => {
             Empowering Students for Successful Careers
           </h3>
           <p className="mt-4 text-gray-600 text-sm leading-relaxed">
-            Knowvex is an Innovative Coach Platform designed to assist Students
+          Edublends is an Innovative Coach Platform designed to assist Students
             with Internships, Professional training Programs, Career guidance,
             and mentorship. Our Aim is to bridge the gap between Education and
             Employment, providing Students with the resources and support they

@@ -92,21 +92,23 @@ const Footer = () => {
             />
           </div>
           <div className="text-center text-sm">
-            <p>© 2019 Lift Media Online S.L.</p>
-            <p>Ronda Sant Pere 52, 08010 Barcelona,</p>
+            <p> © 2024 Made by Edublends Academy Private Limited</p>
+            {/* <p>Ronda Sant Pere 52, 08010 Barcelona,</p>
             <p>
               Inscripción en el Registro Mercantil de Barcelona. Tomo 46606,
               Folio 37, Hoja 525271.
-            </p>
+            </p> */}
           </div>
-          <div className="flex gap-2 items-center self-end mt-8 font-medium">
+          <br />
+          <img src="./images/icon2.webp" alt="" />
+          {/* <div className="flex gap-2 items-center self-end mt-8 font-medium">
             <span>100% Safe and secure Payments with</span>
             <img
               className="p-1 bg-white"
               src="./images/razerPay.svg"
               alt="RazerPay"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

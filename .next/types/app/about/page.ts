@@ -1,4 +1,4 @@
-// File: /home/supriti/project/edublend/app/about/page.tsx
+// File: D:\project\dagar\edu\app\about\page.tsx
 import * as entry from '../../../../app/about/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -24,7 +24,7 @@ const AppBar = () => {
       <div className="container flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-10">
           <Link href={"/"} className="text-primary font-black">
-            KnownVex
+          Edublends
           </Link>
 
           <DropdownMenu>
@@ -37,7 +37,7 @@ const AppBar = () => {
               </div>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56">
-              <DropdownMenuSub>
+              {/* <DropdownMenuSub>
                 <DropdownMenuSubTrigger className="flex items-center">
                   <span>Computer Science</span>
                 </DropdownMenuSubTrigger>
@@ -47,10 +47,10 @@ const AppBar = () => {
                   <DropdownMenuItem>AI</DropdownMenuItem>
                   <DropdownMenuItem>DevOps</DropdownMenuItem>
                 </DropdownMenuSubContent>
-              </DropdownMenuSub>
+              </DropdownMenuSub> */}
 
-              <DropdownMenuItem>Finance</DropdownMenuItem>
-              <DropdownMenuItem>HR</DropdownMenuItem>
+              <DropdownMenuItem>Data Science</DropdownMenuItem>
+              <DropdownMenuItem>Cyber Security</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
           <Link

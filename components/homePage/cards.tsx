@@ -7,27 +7,44 @@ import Reveal from "../animation/reveal";
 const cardData = [
   {
     icon: <Home />,
-    title: "Web Development",
+    title: "Basic Course in Cybersecurity",
     description:
-      "Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.",
+      "This course lays the groundwork with modules on Cybersecurity Fundamentals, Cryptography, Network Security, System Security, and Digital Forensics. Ideal for those new to the field, it covers essential principles and basic security measures.",
   },
   {
     icon: <TabletSmartphone />,
-    title: "Android Development",
+    title: "Intermediate Course in Cybersecurity",
     description:
-      "Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.",
+      "Building on the basics, this course delves into Advanced Cryptography, In-Depth Network Security, Database and OS Security, Cyber Forensics, and Security in Emerging Technologies like IoT and Blockchain.",
   },
   {
     icon: <Bot />,
-    title: "Machine Learning",
+    title: "Advanced Course in Cybersecurity",
     description:
-      "Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.",
+      "Tailored for experienced professionals, this course explores Advanced Threat Detection, Penetration Testing, Incident Handling, Cloud and IoT Security, Cybersecurity Compliance, and Ethical Hacking. It also prepares learners for industry certifications.",
+  },
+  // {
+  //   icon: <Home />,
+  //   title: "Marketing",
+  //   description:
+  //     "Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.",
+  // },
+  {icon: <Home />,
+    title: "Basic Course in Data Science",
+    description:
+      "This course lays the groundwork with modules on Cybersecurity Fundamentals, Cryptography, Network Security, System Security, and Digital Forensics. Ideal for those new to the field, it covers essential principles and basic security measures.",
   },
   {
-    icon: <Home />,
-    title: "Marketing",
+    icon: <TabletSmartphone />,
+    title: "Intermediate Course in Data Science",
     description:
-      "Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.",
+      "This course lays the groundwork with modules on Cybersecurity Fundamentals, Cryptography, Network Security, System Security, and Digital Forensics. Ideal for those new to the field, it covers essential principles and basic security measures..",
+  },
+  {
+    icon: <Bot />,
+    title: "Advanced Course in Data Science",
+    description:
+      "This course lays the groundwork with modules on Cybersecurity Fundamentals, Cryptography, Network Security, System Security, and Digital Forensics. Ideal for those new to the field, it covers essential principles and basic security measures.",
   },
 ];
 
