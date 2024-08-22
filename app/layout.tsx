@@ -11,7 +11,7 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "KnownVex",
+  title: "EduBlends",
   description: "Course Selling Website",
   
 };
