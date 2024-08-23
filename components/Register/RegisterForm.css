@@ -1,0 +1,10 @@
+.contan{
+    width: 50%;
+    height: 35rem;
+    display: flex;
+    position: relative;
+    background-color: #81C784;
+    left: 24rem;
+    top: 6rem;
+    border-radius: 25px
+}

@@ -7,19 +7,19 @@ import Reveal from "../animation/reveal";
 const cardData = [
   {
     icon: <Home />,
-    title: "Basic Course in Cybersecurity",
+    title: "Cybersecurity",
     description:
       "This course lays the groundwork with modules on Cybersecurity Fundamentals, Cryptography, Network Security, System Security, and Digital Forensics. Ideal for those new to the field, it covers essential principles and basic security measures.",
   },
   {
     icon: <TabletSmartphone />,
-    title: "Intermediate Course in Cybersecurity",
+    title: "Machine Learning",
     description:
       "Building on the basics, this course delves into Advanced Cryptography, In-Depth Network Security, Database and OS Security, Cyber Forensics, and Security in Emerging Technologies like IoT and Blockchain.",
   },
   {
     icon: <Bot />,
-    title: "Advanced Course in Cybersecurity",
+    title: "Artificial Intelligence",
     description:
       "Tailored for experienced professionals, this course explores Advanced Threat Detection, Penetration Testing, Incident Handling, Cloud and IoT Security, Cybersecurity Compliance, and Ethical Hacking. It also prepares learners for industry certifications.",
   },
@@ -30,19 +30,19 @@ const cardData = [
   //     "Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.",
   // },
   {icon: <Home />,
-    title: "Basic Course in Data Science",
+    title: "Data Science",
     description:
       "This course lays the groundwork with modules on Cybersecurity Fundamentals, Cryptography, Network Security, System Security, and Digital Forensics. Ideal for those new to the field, it covers essential principles and basic security measures.",
   },
   {
     icon: <TabletSmartphone />,
-    title: "Intermediate Course in Data Science",
+    title: "Deep Learning",
     description:
       "This course lays the groundwork with modules on Cybersecurity Fundamentals, Cryptography, Network Security, System Security, and Digital Forensics. Ideal for those new to the field, it covers essential principles and basic security measures..",
   },
   {
     icon: <Bot />,
-    title: "Advanced Course in Data Science",
+    title: "Web3",
     description:
       "This course lays the groundwork with modules on Cybersecurity Fundamentals, Cryptography, Network Security, System Security, and Digital Forensics. Ideal for those new to the field, it covers essential principles and basic security measures.",
   },

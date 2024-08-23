@@ -1,0 +1,69 @@
+.colo{
+    background-color: rgb(127, 132, 132);
+}
+
+.con{
+    background-color: #81C784;
+    height: 450px;
+    width: 900px;
+    border-radius: 25px;
+}
+
+h1{  
+    text-align: center;
+    font-size: bold;
+}
+
+.email{
+    width: 35%;
+    height: 10px;
+    position: relative;
+    bottom: 15px;
+    left: 300px;
+    width: 35%;
+}
+
+.password{
+    width: 35%;
+    height: 10px;
+    position: relative;
+    top: 30px;
+    left: 300px;
+    width: 35%;
+}
+
+.agree{
+    position: relative;
+    top: 90px;
+    left: 300px;
+    font-size: small;
+}
+
+.btn1{
+    position: relative;
+    background-color: #5D4037;
+    border-color: #5D4037;
+    top: 100px;
+    left: 184px;
+    width: 35%;
+}
+
+.pull-left{
+    position: relative;
+    top: 147px;
+    left: 299px;
+}
+
+.pull-right{
+    position: relative;
+    top: 147px;
+    right: 267px;
+    text-decoration: none;
+}
+
+.new-account{
+    position: relative;
+    top: 170px;
+    left: 57px;
+    text-decoration: none;
+}

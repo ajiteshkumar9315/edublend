@@ -16,9 +16,15 @@ import {
 import { ChevronDown, Mail, Moon, Search, Sun, UserRound } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { useNavigate } from 'react-router-dom'
 
 const AppBar = () => {
   const { setTheme } = useTheme();
+  // const navigate=useNavigate();
+
+  // function handleClick(){
+  //   navigate("Login");
+  // }
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-white">
       <div className="container flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
