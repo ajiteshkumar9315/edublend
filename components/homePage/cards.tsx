@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Bot, Home, TabletSmartphone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Reveal from "../animation/reveal";
+// import card1 from "../sub_cards/card1";
 
 const cardData = [
   {
@@ -103,6 +104,7 @@ const Cards = () => {
           </Reveal>
         </div>
       </section>
+      {/* <card1/> */}
     </div>
   );
 };
