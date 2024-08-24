@@ -10,13 +10,14 @@ const Aboutus = () => {
     <div className="w-full  max-h-[440px] overflow-hidden   bg-gradient-to-r  from-[#5E05FA] to-[#24045D]  ">
       <Reveal>
       <div className="container flex justify-between space-x-16">
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 -ml-52">
           <Image
-            src={"/images/instructorImg.png"}
-            width={350}
+            src={"/images/aboutsus.png"}
+            width={500}
             height={300}
             alt="instructor"
-            className="object-cover"
+            className="object-cover h-96 "
+            
           />
         </div>
 
