@@ -22,6 +22,19 @@ At Edublends Academy, we don’t just teach; we transform. Our vision is to crea
 Join Us on Your Journey to Success:- <br />
 Whether you are a working professional seeking to upgrade your skills, a student aspiring to enter the corporate world, or simply a lifelong learner, Edublends Academy is your partner in growth and success. Explore our programs and take the first step towards realizing your potential.
 Welcome to the Edublends family - where your future begins. <br />
+<br />
+<h1>Chairman</h1>
+<br />
+<p className="chairman">Currently working as the Group Adviser in Raj Kumar Goel Group of Institutions, Ghaziabad, UP, India consisting of a large number of institutions including RKGIT, and RKGITM which are specifically for technical and professional courses. Prior to this position, he functioned as Group Director (R&D) after relinquishing the charge of responsibility of the Director of Raj Kumar Goel Institute of Technology, Ghaziabad, a leading self financed educational institution of Ghaziabad.
+<br />
+Dr Prasad served the Govt of India for more than 37 years in various capacities including as Adviser (Technology Development) in the Deptt of S&T, Min of S&T and handled matters related to Recognition of in-house R&D labs, Tax Incentives for R&D in industry, Intellectual Property Rights and Networking for R&D in Drugs and Pharma Sector, Instrument Development etc. He headed the divisions dealing with implementation of Water and Solar Missions of the DST, GOI.
+<br />
+He was nominated to function as Member in the Governing Boards of many institutions including PDIL, a PSU. Participated in discussions arranged by OECD, UNESCO, UNCTAD, ESCAP and other international bodies across the world.</p>
+<br />
+<h1>Directors</h1>
+<br />
+<h1>Honorable Members</h1>
+<br />
     </>
   )
 }

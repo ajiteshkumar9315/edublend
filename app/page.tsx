@@ -4,6 +4,7 @@ import Banner from "@/components/homePage/banner";
 import Cards from "@/components/homePage/cards";
 import HeroSection from "@/components/homePage/heroSection";
 import Partners from "@/components/homePage/partners";
+import card1 from "@/components/sub_cards/card1";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroSection /> 
       <Aboutus />
       <Cards />
+      {/* <card1 /> */}
       <Banner/>
       <Partners/>
       <Accordian/>
