@@ -1,6 +1,6 @@
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app\\layout.tsx","import":"Inter","arguments":[{"subsets":["latin"],"variable":"--font-sans"}],"variableName":"fontSans"} ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/layout.tsx","import":"Inter","arguments":[{"subsets":["latin"],"variable":"--font-sans"}],"variableName":"fontSans"} ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /* cyrillic-ext */
 @font-face {
   font-family: '__Inter_36bd41';
@@ -670,6 +670,15 @@ video {
 .top-full {
   top: 100%;
 }
+.bottom-4 {
+  bottom: 1rem;
+}
+.right-0 {
+  right: 0px;
+}
+.top-1\/2 {
+  top: 50%;
+}
 .z-0 {
   z-index: 0;
 }
@@ -685,12 +694,25 @@ video {
 .z-\[1\] {
   z-index: 1;
 }
+.m-3 {
+  margin: 0.75rem;
+}
 .m-4 {
   margin: 1rem;
+}
+.m-5 {
+  margin: 1.25rem;
+}
+.m-2 {
+  margin: 0.5rem;
 }
 .-mx-1 {
   margin-left: -0.25rem;
   margin-right: -0.25rem;
+}
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .mx-auto {
   margin-left: auto;
@@ -703,6 +725,20 @@ video {
 .my-16 {
   margin-top: 4rem;
   margin-bottom: 4rem;
+}
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.-ml-52 {
+  margin-left: -13rem;
+}
+.-mt-14 {
+  margin-top: -3.5rem;
 }
 .mb-1 {
   margin-bottom: 0.25rem;
@@ -731,11 +767,17 @@ video {
 .mr-2 {
   margin-right: 0.5rem;
 }
+.-mt-5 {
+  margin-top: -1.25rem;
+}
 .mt-1\.5 {
   margin-top: 0.375rem;
 }
 .mt-2 {
   margin-top: 0.5rem;
+}
+.mt-3 {
+  margin-top: 0.75rem;
 }
 .mt-32 {
   margin-top: 8rem;
@@ -749,11 +791,17 @@ video {
 .mt-8 {
   margin-top: 2rem;
 }
-.me-3 {
-  margin-inline-end: 0.75rem;
+.ml-2 {
+  margin-left: 0.5rem;
 }
-.-ml-52 {
-  margin-left: -13rem;
+.ml-4 {
+  margin-left: 1rem;
+}
+.mb-0 {
+  margin-bottom: 0px;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 .block {
   display: block;
@@ -806,6 +854,9 @@ video {
 .h-9 {
   height: 2.25rem;
 }
+.h-96 {
+  height: 24rem;
+}
 .h-\[300px\] {
   height: 300px;
 }
@@ -830,8 +881,11 @@ video {
 .h-px {
   height: 1px;
 }
-.h-96 {
-  height: 24rem;
+.h-screen {
+  height: 100vh;
+}
+.h-auto {
+  height: auto;
 }
 .max-h-\[300px\] {
   max-height: 300px;
@@ -844,6 +898,9 @@ video {
 }
 .min-h-screen {
   min-height: 100vh;
+}
+.w-1\/5 {
+  width: 20%;
 }
 .w-10 {
   width: 2.5rem;
@@ -874,6 +931,9 @@ video {
 }
 .w-8 {
   width: 2rem;
+}
+.w-80 {
+  width: 20rem;
 }
 .w-\[50\%\] {
   width: 50%;
@@ -907,6 +967,12 @@ video {
 }
 .max-w-max {
   max-width: max-content;
+}
+.max-w-lg {
+  max-width: 32rem;
+}
+.max-w-xl {
+  max-width: 36rem;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -962,6 +1028,9 @@ video {
 }
 .flex-wrap {
   flex-wrap: wrap;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
 }
 .items-end {
   align-items: flex-end;
@@ -1035,11 +1104,19 @@ video {
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
 .self-end {
   align-self: flex-end;
 }
 .overflow-hidden {
   overflow: hidden;
+}
+.overflow-x-auto {
+  overflow-x: auto;
 }
 .overflow-y-auto {
   overflow-y: auto;
@@ -1086,12 +1163,23 @@ video {
 .border-b {
   border-bottom-width: 1px;
 }
+.border-r-2 {
+  border-right-width: 2px;
+}
+.border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
 .border-input {
   border-color: hsl(var(--input));
 }
-.bg-\[\#807AF9\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(128 122 249 / var(--tw-bg-opacity));
+.border-blue-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
 }
 .bg-\[\#87CEEB\] {
   --tw-bg-opacity: 1;
@@ -1117,6 +1205,10 @@ video {
 .bg-destructive {
   background-color: hsl(var(--destructive));
 }
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
 .bg-muted {
   background-color: hsl(var(--muted));
 }
@@ -1132,6 +1224,18 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-yellow-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+}
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
@@ -1171,6 +1275,9 @@ video {
 }
 .fill-current {
   fill: currentColor;
+}
+.fill-yellow-400 {
+  fill: #facc15;
 }
 .object-cover {
   object-fit: cover;
@@ -1240,6 +1347,10 @@ video {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -1292,6 +1403,10 @@ video {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 .font-black {
   font-weight: 900;
 }
@@ -1342,6 +1457,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
@@ -1372,6 +1491,14 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-yellow-400 {
+  --tw-text-opacity: 1;
+  color: rgb(250 204 21 / var(--tw-text-opacity));
+}
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 .underline-offset-4 {
   text-underline-offset: 4px;
@@ -1442,6 +1569,9 @@ video {
 .duration-200 {
   transition-duration: 200ms;
 }
+.duration-300 {
+  transition-duration: 300ms;
+}
 .duration-500 {
   transition-duration: 500ms;
 }
@@ -1467,6 +1597,9 @@ video {
 }
 .duration-200 {
   animation-duration: 200ms;
+}
+.duration-300 {
+  animation-duration: 300ms;
 }
 .duration-500 {
   animation-duration: 500ms;
@@ -1544,6 +1677,11 @@ video {
 
 .hover\:bg-destructive\/90:hover {
   background-color: hsl(var(--destructive) / 0.9);
+}
+
+.hover\:bg-gray-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gray-800:hover {

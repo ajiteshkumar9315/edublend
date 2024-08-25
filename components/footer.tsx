@@ -41,7 +41,7 @@ const Footer = () => {
       className="w-full bg-cover bg-center bg-no-repeat h-[37rem] mt-32 relative"
       style={{ backgroundImage: "url('/images/Footer 17 Dark.svg')" }}
     >
-      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/5 bg-gradient-to-r from-pink-500 to-teal-400 p-8 rounded-xl flex justify-between">
+      <div className="absolute top-0 -mt-14  left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/5 bg-gradient-to-r from-pink-500 to-teal-400 p-8 rounded-xl flex justify-between">
         <span className="text-2xl font-extrabold text-white">
           Start Your Journey to Career Excellence Here
         </span>

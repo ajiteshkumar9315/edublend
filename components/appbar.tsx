@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React from "react";
 import { useTheme } from "next-themes";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -16,26 +16,21 @@ import {
 import { ChevronDown, Mail, Moon, Search, Sun, UserRound } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useNavigate } from 'react-router-dom'
 
 const AppBar = () => {
   const { setTheme } = useTheme();
-  // const navigate=useNavigate();
 
-  // function handleClick(){
-  //   navigate("Login");
-  // }
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-white">
       <div className="container flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-10">
-          <Link href={"/"} className="text-primary font-black">
-          Edublends
+          <Link href="/" className="text-primary font-black">
+            Edublends
           </Link>
 
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <div className="group flex items-center cursor-pointer ">
+              <div className="group flex items-center cursor-pointer">
                 <span className="group-hover:text-primary text-muted-foreground">
                   courses
                 </span>
@@ -43,6 +38,7 @@ const AppBar = () => {
               </div>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56">
+              {/* Example of a sub-menu structure */}
               {/* <DropdownMenuSub>
                 <DropdownMenuSubTrigger className="flex items-center">
                   <span>Computer Science</span>
@@ -61,7 +57,7 @@ const AppBar = () => {
           </DropdownMenu>
           <Link
             href="/about"
-            className="text-sm font-medium  hover:text-primary text-muted-foreground"
+            className="text-sm font-medium hover:text-primary text-muted-foreground"
           >
             About Us
           </Link>
@@ -73,7 +69,7 @@ const AppBar = () => {
           </Link>
         </div>
 
-        <div className="flex items-center space-x-4 ">
+        <div className="flex items-center space-x-4">
           <div className="relative w-full">
             <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
             <Input
@@ -83,14 +79,12 @@ const AppBar = () => {
             />
           </div>
 
-          <div
-            // href={"/login"}
-            className="hover:text-primary  text-muted-foreground"
-          >
-            <Button>
+          {/* Updated login button to use Link for client-side navigation */}
+          <Link href="/login">
+            <Button className="hover:text-primary text-muted-foreground">
               <UserRound className="mr-2 h-4 w-4" /> Login
             </Button>
-          </div>
+          </Link>
         </div>
       </div>
     </header>
