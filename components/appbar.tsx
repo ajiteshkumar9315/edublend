@@ -81,7 +81,7 @@ const AppBar = () => {
 
           {/* Updated login button to use Link for client-side navigation */}
           <Link href="/login">
-            <Button className="hover:text-primary text-muted-foreground">
+            <Button className="hover:text-gray-300  text-muted-foreground text-white">
               <UserRound className="mr-2 h-4 w-4" /> Login
             </Button>
           </Link>
