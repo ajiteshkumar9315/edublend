@@ -34,14 +34,14 @@ const Carousel: React.FC = () => {
       <div className="overflow-hidden">
         <div
           className="flex transition-transform duration-500 ease-in-out"
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          style={{ transform: `translateX(-${currentIndex * 100}%)`,height:' 34rem' }}
         >
           {images.map((image, index) => (
             <div key={index} className="w-full flex-shrink-0 caro_img">
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full object-cover style='height: 34rem'"
+                className="w-full object-cover " 
               />
             </div>
           ))}
