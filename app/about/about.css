@@ -1,0 +1,22 @@
+.head{
+    text-align: center;
+    margin: 5px;
+    padding-top: 5px;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: darkviolet;
+}
+
+.topic{
+    padding: 20px;
+    /* margin: 4px; */
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.subtop{
+    padding: 20px;
+    margin: 2px;
+    font-size: large;
+    font-weight: bold;
+}

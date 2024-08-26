@@ -29,7 +29,7 @@ const Carousel: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full max-w-xl mx-auto">
+    <div className="relative w-full mx-auto">
       {/* Carousel Images */}
       <div className="overflow-hidden">
         <div
@@ -37,7 +37,7 @@ const Carousel: React.FC = () => {
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {images.map((image, index) => (
-            <div key={index} className="w-full flex-shrink-0">
+            <div key={index} className="w-full h-2/5 flex-shrink-0">
               <img
                 src={image.src}
                 alt={image.alt}

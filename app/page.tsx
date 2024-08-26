@@ -10,8 +10,8 @@ import Card1 from "@/components/sub_cards/Card1";
 export default function Home() {
   return (
     <main className=" min-h-screen bg-gradient-to-r  from-blue-50 to-pink-50  ">
-      <HeroSection /> 
       <Boardcast/>
+      <HeroSection /> 
       <Aboutus />
       <Cards />
       <Card1 />

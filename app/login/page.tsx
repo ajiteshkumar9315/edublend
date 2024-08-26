@@ -1,5 +1,9 @@
+"use client";
+
 import React, { useState } from "react";
-import "./style1.css";
+import "./style2.css";
+import AppBar from "@/components/appbar";
+// import "./style1.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle, faFacebookF, faYoutube, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
@@ -15,6 +19,8 @@ const LoginSignup = () => {
   };
 
   return (
+    // <AppBar/>
+
     <div className={`container ${isActive ? "active" : ""}`} id="container">
       <div className={`form-container sign-up ${isActive ? "active" : ""}`}>
         <form action="#">
