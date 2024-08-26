@@ -37,11 +37,11 @@ const Carousel: React.FC = () => {
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {images.map((image, index) => (
-            <div key={index} className="w-full h- flex-shrink-0">
+            <div key={index} className="w-full flex-shrink-0 caro_img">
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full object-cover"
+                className="w-full object-cover style='height: 34rem'"
               />
             </div>
           ))}
@@ -51,19 +51,19 @@ const Carousel: React.FC = () => {
       {/* Navigation Buttons */}
       <button
         onClick={handlePrev}
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 p-2 bg-white rounded-full shadow-md hover:bg-gray-200 focus:outline-none"
+        className="absolute top-1/2 left-0 transform -translate-y-1/2 p-2 bg-white rounded-full shadow-md hover:bg-gray-200 focus:outline-none caro_nav"
       >
         ❮
-      </button>
+      </button> 
       <button
         onClick={handleNext}
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 p-2 bg-white rounded-full shadow-md hover:bg-gray-200 focus:outline-none"
+        className="absolute top-1/2 right-0 transform -translate-y-1/2 p-2 bg-white rounded-full shadow-md hover:bg-gray-200 focus:outline-none caro_nav"
       >
         ❯
       </button>
 
       {/* Indicators */}
-      <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+      <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2 caro_nav2">
         {images.map((_, index) => (
           <button
             key={index}
