@@ -1,78 +1,72 @@
-import React from 'react';
-// import Navbar from '../Navbar/Navbar';
-// import Footer from '../Footer/Footer';
-// import AppBar from './appbar';
-// import '@/Login.css';
-import '@/app/login/Login.css';
+import React, { useState } from "react";
+import "./style1.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGoogle, faFacebookF, faYoutube, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
-const Login: React.FC = () => {
+const LoginSignup = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleRegisterClick = () => {
+    setIsActive(true);
+  };
+
+  const handleLoginClick = () => {
+    setIsActive(false);
+  };
+
   return (
-    <>
-      {/* <AppBar /> */}
-      {/* eslint-disable-next-line */}
-
-      <div className="container con">
-        <h1 className="text-center fw-bold login-title my-5 mt--5 p-3">Login Form</h1>
-        <form action="/login" className="form-signin" method="post">
-          <div className="form-floating mb-3 email">
-            <input
-              type="email"
-              className="form-control"
-              id="floatingInput"
-              placeholder="name@example.com"
-              name="email"
-              required
-            />
-            <label htmlFor="floatingInput">Email address</label>
+    <div className={`container ${isActive ? "active" : ""}`} id="container">
+      <div className={`form-container sign-up ${isActive ? "active" : ""}`}>
+        <form action="#">
+          <h1>Create Account</h1>
+          <div className="social-icons">
+            <a href="#" className="icon"><FontAwesomeIcon icon={faGoogle} /></a>
+            <a href="#" className="icon"><FontAwesomeIcon icon={faFacebookF} /></a>
+            <a href="#" className="icon"><FontAwesomeIcon icon={faYoutube} /></a>
+            <a href="#" className="icon"><FontAwesomeIcon icon={faTwitter} /></a>
           </div>
-          <div className="form-floating password">
-            <input
-              type="password"
-              className="form-control"
-              id="floatingPassword"
-              placeholder="Password"
-              name="password"
-              required
-            />
-            <label htmlFor="floatingPassword">Password</label>
-          </div>
-          <div className="col-12">
-            <div className="form-check agree">
-              <input
-                className="form-check-input is-invalid"
-                type="checkbox"
-                value=""
-                id="invalidCheck3"
-                aria-describedby="invalidCheck3Feedback"
-                required
-              />
-              <label className="form-check-label text-dark fw-bolder" htmlFor="invalidCheck3">
-                Agree to terms and conditions
-              </label>
-              <div id="invalidCheck3Feedback" className="invalid-feedback text-dark fw-bolder">
-                You must agree before submitting.
-              </div>
-            </div>
-          </div>
-          <div className="col-12">
-            <button className="btn btn-primary btn1 fw-bolder" type="submit">
-              Sign in
-            </button>
-            <label className="checkbox pull-left mt-3 fw-bolder">
-              <input type="checkbox" value="remember-me" /> Remember me
-            </label>
-            <a href="/" className="pull-right text-dark fw-bolder need-help">
-              Need Help?
-            </a>
-            <a href="/RegisterForm" className="text-center text-dark fw-bolder new-account">
-              Create an account
-            </a>
-          </div>
+          <span>or use your email to register</span>
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button type="button">Sign Up</button>
         </form>
       </div>
-      {/* <Footer /> */}
-    </>
+
+      <div className={`form-container sign-in ${!isActive ? "active" : ""}`}>
+        <form action="#">
+          <h1>Sign In</h1>
+          <div className="social-icons">
+            <a href="#" className="icon"><FontAwesomeIcon icon={faGoogle} /></a>
+            <a href="#" className="icon"><FontAwesomeIcon icon={faFacebookF} /></a>
+            <a href="#" className="icon"><FontAwesomeIcon icon={faYoutube} /></a>
+            <a href="#" className="icon"><FontAwesomeIcon icon={faTwitter} /></a>
+          </div>
+          <span>or use your email and password</span>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <a href="#">Forgot Password?</a>
+          <button type="button">Sign In</button>
+        </form>
+      </div>
+
+      <div className="toggle-container">
+        <div className="toggle">
+          <div className={`toggle-panel toggle-left ${!isActive ? "active" : ""}`}>
+            <h1>Welcome Back!</h1>
+            <p>Enter your personal details to use all of the site features.</p>
+            <button className="hidden" id="login" onClick={handleLoginClick}>Sign In</button>
+          </div>
+
+          <div className={`toggle-panel toggle-right ${isActive ? "active" : ""}`}>
+            <h1>Hello, Subscriber!</h1>
+            <p>Register with your personal details to use all of the site features.</p>
+            <button className="hidden" id="register" onClick={handleRegisterClick}>Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default Login;
+export default LoginSignup;

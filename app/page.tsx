@@ -5,7 +5,7 @@ import Cards from "@/components/homePage/cards";
 import HeroSection from "@/components/homePage/heroSection";
 import Partners from "@/components/homePage/partners";
 import Boardcast from '@/components/homePage/boardcast';
-
+import Card1 from "@/components/sub_cards/Card1";
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
       <Boardcast/>
       <Aboutus />
       <Cards />
+      <Card1 />
       <Banner/>
       <Partners/>
       <Accordian/>
