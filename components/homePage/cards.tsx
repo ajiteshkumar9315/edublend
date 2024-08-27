@@ -7,14 +7,15 @@ import Reveal from "../animation/reveal";
 import Card1 from "../sub_cards/Card1";
 import CardImage from "@/public/images/product1.png"; // Import the image correctly
 import { Item } from "@radix-ui/react-dropdown-menu";
+import { Button } from "../ui/button";
 
 const cardData = [
   {
     icon: <Image src={CardImage} alt="Card Image"/>, 
-    duration: "8 weeks",
+    title: "Cybersecurity",
     ratings: 4.1,
     popularity: 10000,
-    title: "Cybersecurity",
+    duration: "8 weeks",
     description:
       "This course lays the groundwork with modules on Cybersecurity Fundamentals, Cryptography, Network Security, System Security, and Digital Forensics. Ideal for those new to the field, it covers essential principles and basic security measures.",
   },
@@ -94,7 +95,7 @@ const Cards = () => {
             <h1 className="text-4xl font-black mt-2  mb-12">DO WE OFFER ?</h1>
           </Reveal>
           </div>
-          <Reveal>
+          {/* <Reveal>
             <div>
               <div className="flex m-2 ">
                 {cardData?.map((item,index) => (
@@ -129,7 +130,7 @@ const Cards = () => {
                 ))}
               </div>
             </div>
-          </Reveal>
+          </Reveal> */}
 
           <Reveal>
             <div className="flex flex-wrap justify-center gap-6">
@@ -158,6 +159,7 @@ const Cards = () => {
                   <CardContent>
                     <p className="text-left">{item?.description}</p>
                   </CardContent>
+                  <div className="flex ml-5 relative bottom-0.2"><Button className="hover:text-gray-300  text-muted-foreground text-white "> know more </Button></div>
                 </Card>
               ))}
             </div>

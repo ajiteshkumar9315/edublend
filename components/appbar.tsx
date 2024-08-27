@@ -53,6 +53,9 @@ const AppBar = () => {
 
               <DropdownMenuItem>Data Science</DropdownMenuItem>
               <DropdownMenuItem>Cyber Security</DropdownMenuItem>
+              <DropdownMenuItem>Cyber Security</DropdownMenuItem>
+              <DropdownMenuItem>Cyber Security</DropdownMenuItem>
+              <DropdownMenuItem>Cyber Security</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
           <Link

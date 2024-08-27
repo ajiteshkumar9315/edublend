@@ -22,6 +22,21 @@ const Card1: React.FC = () => {
         description:
           "Learn data manipulation, analysis, and visualization techniques to uncover insights from complex data.",
       },
+      // {
+      //   title: "Data Science",
+      //   description:
+      //     "Learn data manipulation, analysis, and visualization techniques to uncover insights from complex data.",
+      // },
+      // {
+      //   title: "Data Science",
+      //   description:
+      //     "Learn data manipulation, analysis, and visualization techniques to uncover insights from complex data.",
+      // },
+      // {
+      //   title: "Data Science",
+      //   description:
+      //     "Learn data manipulation, analysis, and visualization techniques to uncover insights from complex data.",
+      // },
     ],
     "Machine Learning": [
       {
@@ -29,6 +44,21 @@ const Card1: React.FC = () => {
         description:
           "Master algorithms and models to create intelligent systems capable of learning and making decisions.",
       },
+      {
+        title: "Machine Learning",
+        description:
+          "Master algorithms and models to create intelligent systems capable of learning and making decisions.",
+      },
+      // {
+      //   title: "Machine Learning",
+      //   description:
+      //     "Master algorithms and models to create intelligent systems capable of learning and making decisions.",
+      // },
+      // {
+      //   title: "Machine Learning",
+      //   description:
+      //     "Master algorithms and models to create intelligent systems capable of learning and making decisions.",
+      // },
     ],
     "Java Development": [
       {
@@ -77,7 +107,7 @@ const Card1: React.FC = () => {
       {/* Content area showing the selected course */}
       <div className="flex-1 p-4 flex h-full w-1/5 items-center justify-center">
         {/* Make sure to add flex-nowrap and overflow-x-auto */}
-        <div className="flex ">
+        <div className="flex flex-col">
           {courses[selectedCourse].map((course) => (
             <div
               key={course.title}

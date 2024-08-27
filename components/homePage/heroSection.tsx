@@ -7,7 +7,7 @@ import ArcCarousel from "../arcCarousel";
 
 const HeroSection = () => {
   return (
-    <div className="w-full py-2   container  mt-12 ">
+    <div className="w-full py-2   container  mt-20 ">
       <div className="flex justify-evenly  gap-8 items-stretch">
         <Image src="/images/rocket.svg" alt="rocket" width={300} height={100} />
         <div className="text-center ">

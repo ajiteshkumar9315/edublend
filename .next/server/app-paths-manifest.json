@@ -1,9 +1,6 @@
 {
-  "/login/page": "app/login/page.js",
-<<<<<<< HEAD
+  "/page": "app/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/about/page": "app/about/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
-=======
-  "/page": "app/page.js"
->>>>>>> e82f53486456dfd1204b4cfb33f90d45560effa1
+  "/login/page": "app/login/page.js"
 }
