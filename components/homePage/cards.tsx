@@ -4,7 +4,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Bot,Star, Home, TabletSmartphone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Reveal from "../animation/reveal";
-import Card1 from "../sub_cards/Card1";
 import CardImage from "@/public/images/product1.png"; // Import the image correctly
 import { Item } from "@radix-ui/react-dropdown-menu";
 import { Button } from "../ui/button";
@@ -166,7 +165,6 @@ const Cards = () => {
           </Reveal>
         </div>
       </section>
-      <Card1 />
     </div>
   );
 };
