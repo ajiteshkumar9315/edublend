@@ -1,6 +1,6 @@
 // components/Carousel.tsx
 "use client";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 interface ImageData {
   src: string;
@@ -8,9 +8,9 @@ interface ImageData {
 }
 
 const images: ImageData[] = [
-  { src: '/images/slide1.jpeg', alt: 'Photo 1' }, // Ensure you have these images in your public/images directory
-  { src: '/images/slide2.jpeg', alt: 'Photo 2' },
-  { src: '/images/slide3.jpeg', alt: 'Photo 3' },
+  { src: "/images/slide1.jpeg", alt: "Photo 1" }, // Ensure you have these images in your public/images directory
+  { src: "/images/slide2.jpeg", alt: "Photo 2" },
+  { src: "/images/slide3.jpeg", alt: "Photo 3" },
 ];
 
 const Carousel: React.FC = () => {
@@ -29,7 +29,7 @@ const Carousel: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full mx-auto">
+    <div className="relative w-full mx-auto max-h-[calc(107vh-200px)]">
       {/* Carousel Images */}
       <div className="overflow-hidden">
         <div
@@ -42,6 +42,7 @@ const Carousel: React.FC = () => {
                 src={image.src}
                 alt={image.alt}
                 className="w-full object-cover " 
+                // className="w-full h-3/5 object-cover" // Adjusted height class to 'h-96'
               />
             </div>
           ))}
@@ -69,7 +70,7 @@ const Carousel: React.FC = () => {
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`w-3 h-3 rounded-full ${
-              currentIndex === index ? 'bg-blue-500' : 'bg-gray-300'
+              currentIndex === index ? "bg-blue-500" : "bg-gray-300"
             }`}
           />
         ))}

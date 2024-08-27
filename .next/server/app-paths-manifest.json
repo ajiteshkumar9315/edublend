@@ -1,7 +1,9 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js",
   "/login/page": "app/login/page.js",
+<<<<<<< HEAD
   "/about/page": "app/about/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
+=======
+  "/page": "app/page.js"
+>>>>>>> e82f53486456dfd1204b4cfb33f90d45560effa1
 }
