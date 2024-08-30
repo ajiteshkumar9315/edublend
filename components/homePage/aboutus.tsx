@@ -4,13 +4,16 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
 import Reveal from "../animation/reveal";
+// _app.js or _app.tsx
+import "@/components/homePage/aboutus.css";
+
 
 const Aboutus = () => {
   return (
-    <div className="w-full  max-h-[440px] overflow-hidden   bg-gradient-to-r  from-[#5E05FA] to-[#24045D]  ">
+    <div className="w-full overflow-hidden overall-card bg-gradient-to-r  from-[#5E05FA] to-[#24045D]  ">
       <Reveal>
       <div className="container flex justify-between space-x-16">
-        <div className="flex-shrink-0 -ml-52">
+        <div className="flex-shrink-0 responsive-image -ml-52">
           <Image
             src={"/images/aboutsus.png"}
             width={500}
@@ -21,7 +24,7 @@ const Aboutus = () => {
           />
         </div>
 
-        <div className="p-8 shadow-2xl space-y-4 max-w-[660px] max-h-[300px] rounded-2xl bg-white mt-8  flex-grow">
+        <div className="p-8 shadow-2xl space-y-4 responsive-margin-left responsive-width responsive-height rounded-2xl bg-white mt-8  flex-grow">
           <h2 className="text-sm font-semibold uppercase text-gray-600 mb-2 flex items-center gap-4">
             <Users size={20} color="black" />
             About us

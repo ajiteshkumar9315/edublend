@@ -1,0 +1,96 @@
+@media (max-width: 320px) {
+    /* Extra small devices (phones, 320px and down) */
+    .responsive-margin-left{
+        margin-left: -300px;
+    }
+    .responsive-height{
+        height: 450px;
+    }
+    .overall-card{
+        height: 550px;
+    }
+  }
+  
+  @media (min-width: 321px) and (max-width: 480px) {
+  
+    /* Small devices (phones, 321px to 480px) */
+    .responsive-margin-left{
+        margin-left: -300px !important;
+    }
+    .responsive-height{
+        height: 450px;
+    }
+    .overall-card{
+        height: 550px;
+    }
+    .responsive-image{
+        margin-top: 168px;
+    }
+  }
+  
+  @media (min-width: 412px) and (max-width: 480px) {
+  
+    /* Small devices (phones, 321px to 480px) */
+    .responsive-height{
+        height: 450px;
+    }
+    .responsive-margin-left{
+        margin-left: -300px;
+    }
+    .overall-card{
+        height: 550px;
+    }
+    .responsive-image{
+        margin-top: 168px;
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 600px) {
+  
+    /* Medium devices (tablets, 481px to 600px) */
+    .responsive-margin-left{
+        margin-left: -300px;
+    }
+    .responsive-height{
+        height: 450px;
+    }
+    .overall-card{
+        height: 550px;
+    }
+    .responsive-image{
+        margin-top: 168px;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 800px) {
+  
+    /* Large devices (desktops, 601px to 800px) */
+    .responsive-width{
+        width: 660px;
+    }
+    .responsive-height{
+        height: 300px;
+    }
+  }
+  
+  @media (min-width: 801px) and (max-width: 1024px) {
+  
+    /* Extra large devices (large desktops, 801px to 1024px) */
+    .responsive-width{
+        width: 660px;
+    }
+    .responsive-height{
+        height: 300px;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+  
+    /* Extra extra large devices (very large desktops, 1025px and up) */
+    .responsive-width{
+        width: 660px;
+    }
+    .responsive-height{
+        height: 300px;
+    }
+  }

@@ -1,0 +1,66 @@
+.banner-3 {
+    background-image: url('/images/banner3.svg'); /* Add your actual image path */
+    background-size: cover; /* Ensures the image covers the container without stretching */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+  }
+  
+  /* Adjustments for mobile view */
+  @media (max-width: 768px) {
+    .banner-3 {
+      background-size: cover; /* Adjust this to fully show the image on mobile */
+      background-position: center; /* Center the image in the container */
+    }
+  }
+  
+
+  @media (max-width: 320px) {
+    /* Extra small devices (phones, 320px and down) */
+    .responsive-height{
+        height: 80px;
+    }
+  }
+  
+  @media (min-width: 321px) and (max-width: 480px) {
+  
+    /* Small devices (phones, 321px to 480px) */
+    .responsive-height{
+        height: 80px;
+    }
+  
+  
+  }
+  
+  @media (min-width: 412px) and (max-width: 480px) {
+  
+    /* Small devices (phones, 321px to 480px) */
+    .responsive-height{
+        height: 80px;
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 600px) {
+  
+    /* Medium devices (tablets, 481px to 600px) */
+    
+  }
+  
+  @media (min-width: 601px) and (max-width: 800px) {
+  
+    /* Large devices (desktops, 601px to 800px) */
+    .responsive-height{
+        height: 80px;
+    }
+  }
+  
+  @media (min-width: 801px) and (max-width: 1024px) {
+  
+    /* Extra large devices (large desktops, 801px to 1024px) */
+    
+  }
+  
+  @media (min-width: 1025px) {
+  
+    /* Extra extra large devices (very large desktops, 1025px and up) */
+    
+  }
