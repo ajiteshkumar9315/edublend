@@ -1,0 +1,21 @@
+  
+/* Remove redundant and overlapping media queries */
+@media (max-width: 320px) {
+    .responsive-width {
+      width: 50px !important;
+    }
+  }
+  
+  @media (min-width: 321px) and (max-width: 480px) {
+    .responsive-width {
+      width: 80px !important;
+    }
+  }
+  
+  /* Combine similar media queries */
+  @media (min-width: 481px) and (max-width: 800px) {
+    .responsive-width {
+      width: 100px !important;
+    }
+  }
+  

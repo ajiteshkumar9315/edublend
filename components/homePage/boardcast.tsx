@@ -9,7 +9,7 @@ interface ImageData {
 const images: ImageData[] = [
   { src: "/images/slide1.jpeg", alt: "Photo 1" },
   { src: "/images/slide2.jpeg", alt: "Photo 2" },
-  { src: "/images/slide3.jpeg", alt: "Photo 3" },
+  { src: "/images/slide3.png", alt: "Photo 3" },
 ];
 
 const Carousel: React.FC = () => {
@@ -33,7 +33,7 @@ const Carousel: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext(); // Move to the next image automatically
-    }, 3000); // Change image every 3 seconds
+    }, 5000); // Change image every 3 seconds
 
     // Clear the interval when the component is unmounted
     return () => clearInterval(interval);

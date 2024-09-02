@@ -133,15 +133,6 @@ const Card1: React.FC = () => {
               {/* Dropdown list for mobile */}
               {expandedCategory === courseCategory && (
                 <div className="ml-4">
-                  {courses[courseCategory].map((course, index) => (
-                    <Button
-                      key={index}
-                      onClick={() => setSelectedCourse(courseCategory)}
-                      className="text-left w-full mb-2 text-sm"
-                    >
-                      {course.title}
-                    </Button>
-                  ))}
                 </div>
               )}
             </div>

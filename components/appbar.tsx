@@ -62,7 +62,7 @@ const AppBar = () => {
               About Us
             </Link>
             <Link
-              href="/contact"
+              href="/contactus"
               className="text-sm font-medium hover:text-primary text-muted-foreground"
             >
               Contact Us
