@@ -1,4 +1,4 @@
-// File: /home/supriti/project/edublend/app/layout.tsx
+// File: C:\Users\tusha\OneDrive\Desktop\gauravgps\edublend\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
