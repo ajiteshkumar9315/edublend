@@ -1,76 +1,63 @@
 "use client";
-import React from 'react';
 
-export default function Page() {
-  const item = {
-    institute: "Tech University",
-    title: "Master of Data Science",
-    legacy: "A program with a legacy of excellence",
-    desc: "A comprehensive program designed to equip you with cutting-edge skills in data science.",
-    image: "https://via.placeholder.com/150",
-    duration: "2 Years",
-    ratings: "4.5/5",
-    benefits: "Learn from the best in the industry and gain hands-on experience.",
-    alumni: "Alumni working at top tech companies.",
-    feature: "Industry-recognized certification upon completion.",
-    keywords: "Data Science, AI, Machine Learning",
-    tools: "Python, R, TensorFlow",
-    projects: "Capstone project in collaboration with industry partners.",
-    educator: "Dr. John Doe, PhD in Data Science",
-  };
+import { useParams } from "next/navigation";
+import { courses } from "@/components/sub_cards/Card1";
+import { Course } from "@/types";
+
+const CoursePage: React.FC = () => {
+  const params = useParams();
+  const id = params?.id as string; // Explicitly cast the id as a string
+
+  // Search for the course in all categories
+  let selectedCourse: Course | undefined;
+
+  Object.keys(courses).forEach((category) => {
+    const foundCourse = courses[category].find((course) => course.id === id);
+    if (foundCourse) {
+      selectedCourse = foundCourse;
+    }
+  });
+
+  if (!selectedCourse) {
+    return <div>Course not found</div>;
+  }
 
   return (
-    <div>
-      <div> Background Image
-        <div className='flex'>
-          <div>{item.institute}</div>
-          <div>{item.title}</div>
-          <div>{item.legacy}</div>
-          <div>{item.desc}</div>
-        </div>
-        <div>
-          <img src={item.image} alt="Course Image" />
-        </div>
+    <div className="p-8">
+      <h1 className="text-3xl font-bold">{selectedCourse.title}</h1>
+      <p>{selectedCourse.description}</p>
+      <div className="mt-4">
+        <strong>Institute:</strong> {selectedCourse.institute}
       </div>
-
-      <div>
-        <div>{item.duration}</div>
-        <div>{item.ratings}</div>
+      <div className="mt-4">
+        <strong>Duration:</strong> {selectedCourse.duration}
       </div>
-
-      <div className='flex'>
-        <div>Advantages</div>
-        <div>Form</div>
+      <div className="mt-4">
+        <strong>Educator:</strong> {selectedCourse.educator}
       </div>
-
-      <div>
-        <div>{item.benefits}</div>
-        <div>{item.alumni}</div>
+      <div className="mt-4">
+        <strong>Ratings:</strong> {selectedCourse.ratings}
       </div>
-
-      <div>
-        <div>{item.feature}</div>
+      <div className="mt-4">
+        <strong>Legacy:</strong> {selectedCourse.legacy}
       </div>
-
-      <div>
-        <div>{item.keywords}</div>
+      <div className="mt-4">
+        <strong>Benefits:</strong> {selectedCourse.benefits}
       </div>
-
-      <div>
-        <div>{item.tools}</div>
+      <div className="mt-4">
+        <strong>Alumni:</strong> {selectedCourse.alumni}
       </div>
-
-      <div>
-        <div>{item.projects}</div>
+      <div className="mt-4">
+        <strong>Feature:</strong> {selectedCourse.feature}
       </div>
-
-      <div>Career Support</div>
-
-      <div>
-        <div>{item.educator}</div>
+      <div className="mt-4">
+        <strong>Tools:</strong> {selectedCourse.tools}
       </div>
-
-      <div>Admission Process</div>
+      <div className="mt-4">
+        <strong>Projects:</strong> {selectedCourse.projects}
+      </div>
     </div>
   );
-}
+};
+
+export default CoursePage;
