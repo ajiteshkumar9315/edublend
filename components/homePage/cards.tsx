@@ -1,101 +1,113 @@
-"use client"
+"use client";
 import Image from "next/image"; 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Reveal from "../animation/reveal";
 import CardImage from "@/public/images/product1.png"; 
 import { Button } from "../ui/button";
 import { useRouter } from 'next/navigation'; 
 
-interface DataItem {
+// Interface for the card data structure
+export interface DataItem {
     id: number;
-    icon: React.JSX.Element;
+    icon: string; // The icon is a string (image path)
     title: string;
     ratings: number;
     popularity: number;
     duration: string;
+    category: string;
     description: string;
 }
 
+// Array containing the card data
 const cardData: DataItem[] = [
-  {
-    id: 1, 
-    icon: <Image src={CardImage} alt="Card Image"/>, 
-    title: "Cybersecurity",
-    ratings: 4.1,
-    popularity: 10000,
-    duration: "8 weeks",
-    description:
-      "This course lays the groundwork with modules on Cybersecurity Fundamentals, Cryptography, Network Security, System Security, and Digital Forensics. Ideal for those new to the field, it covers essential principles and basic security measures.",
-  },
-  {
-    id: 2,
-    icon: <Image src={CardImage} alt="Card Image"/>,
-    duration: "8 weeks",
-    ratings: 4.1,
-    popularity: 10000,
-    title: "Machine Learning",
-    description:
-      "Building on the basics, this course delves into Advanced Cryptography, In-Depth Network Security, Database and OS Security, Cyber Forensics, and Security in Emerging Technologies like IoT and Blockchain.",
-  },
-  {
-    id: 3,
-    icon: <Image src={CardImage} alt="Card Image"/>,
-    duration: "8 weeks",
-    ratings: 4.1,
-    popularity: 10000,
-    title: "Artificial Intelligence",
-    description:
-      "Tailored for experienced professionals, this course explores Advanced Threat Detection, Penetration Testing, Incident Handling, Cloud and IoT Security, Cybersecurity Compliance, and Ethical Hacking. It also prepares learners for industry certifications.",
-  },
-  {
-    id: 4,
-    icon: <Image src={CardImage} alt="Card Image"/>,
-    duration: "8 weeks",
-    ratings: 4.1,
-    popularity: 10000,
-    title: "Marketing",
-    description:
-      "Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.",
-  },
-  {
-    id: 5,
-    icon: <Image src={CardImage} alt="Card Image"/>,
-    duration: "8 weeks",
-    ratings: 4.1,
-    popularity: 10000,
-    title: "Data Science",
-    description:
-      "This course lays the groundwork with modules on Cybersecurity Fundamentals, Cryptography, Network Security, System Security, and Digital Forensics. Ideal for those new to the field, it covers essential principles and basic security measures.",
-  },
-  {
-    id: 6,
-    icon: <Image src={CardImage} alt="Card Image"/>,
-    duration: "4 weeks",
-    ratings: 4.1,
-    popularity: 10000,
-    title: "Deep Learning",
-    description:
-      "This course lays the groundwork with modules on Cybersecurity Fundamentals, Cryptography, Network Security, System Security, and Digital Forensics. Ideal for those new to the field, it covers essential principles and basic security measures.",
-  },
-  {
-    id: 7,
-    icon: <Image src={CardImage} alt="Card Image"/>,
-    duration: "4 weeks",
-    ratings: 4.1,
-    popularity: 10000,
-    title: "Web3",
-    description:
-      "This course lays the groundwork with modules on Cybersecurity Fundamentals, Cryptography, Network Security, System Security, and Digital Forensics. Ideal for those new to the field, it covers essential principles and basic security measures.",
-  },
+    {
+        id: 1,
+        icon: CardImage.src, 
+        title: "Cybersecurity",
+        ratings: 4.1,
+        popularity: 10000,
+        duration: "8 weeks",
+        category: "Security",
+        description:
+          "This course lays the groundwork with modules on Cybersecurity Fundamentals, Cryptography, Network Security, System Security, and Digital Forensics.",
+      },
+      {
+        id: 2,
+        icon: CardImage.src,
+        title: "Machine Learning",
+        ratings: 4.1,
+        popularity: 10000,
+        duration: "8 weeks",
+        category: "AI",
+        description:
+          "Building on the basics, this course delves into Advanced Cryptography, In-Depth Network Security, Database and OS Security, Cyber Forensics.",
+      },
+      {
+        id: 3,
+        icon: CardImage.src,
+        title: "Artificial Intelligence",
+        ratings: 4.1,
+        popularity: 10000,
+        duration: "8 weeks",
+        category: "AI",
+        description:
+          "Tailored for experienced professionals, this course explores Advanced Threat Detection, Penetration Testing, Incident Handling, Cloud and IoT Security.",
+      },
+      {
+        id: 4,
+        icon: CardImage.src,
+        title: "Marketing",
+        ratings: 4.1,
+        popularity: 10000,
+        duration: "8 weeks",
+        category: "Business",
+        description:
+          "This course covers digital marketing techniques, market research, branding strategies, and social media management.",
+      },
+      {
+        id: 5,
+        icon: CardImage.src,
+        title: "Data Science",
+        ratings: 4.1,
+        popularity: 10000,
+        duration: "8 weeks",
+        category: "Data",
+        description:
+          "Learn data analysis, statistics, machine learning techniques, and data visualization for effective decision-making.",
+      },
+      {
+        id: 6,
+        icon: CardImage.src,
+        title: "Deep Learning",
+        ratings: 4.1,
+        popularity: 10000,
+        duration: "4 weeks",
+        category: "AI",
+        description:
+          "Understand neural networks, deep learning algorithms, and their applications in computer vision and natural language processing.",
+      },
+      {
+        id: 7,
+        icon: CardImage.src,
+        title: "Web3",
+        ratings: 4.1,
+        popularity: 10000,
+        duration: "4 weeks",
+        category: "Blockchain",
+        description:
+          "An introduction to decentralized applications (DApps), blockchain technology, smart contracts, and Web3 infrastructure.",
+      },
+  // Add other course objects...
 ];
 
+// Cards component to render the card data
 const Cards = () => {
     const router = useRouter();
 
     const handleCardClick = (item: DataItem) => {
-        router.push(`/details/${item.id}`);
+        // Navigate to course details page, passing the id and category as query params
+        router.push(`/details/${item.id}?category=${item.category}`);
     };
 
     return (
@@ -134,7 +146,7 @@ const Cards = () => {
                                                     "inline-block p-3 rounded-full bg-[#FFEFDD] text-purple-500"
                                                 )}
                                             >
-                                                {item.icon}
+                                                <Image src={item.icon} alt={item.title} width={50} height={50} />
                                             </span>
                                         </div>
                                         <CardTitle className="text-xl font-bold text-left">
@@ -145,7 +157,9 @@ const Cards = () => {
                                         <p className="text-left">{item.description}</p>
                                     </CardContent>
                                     <div className="flex ml-5 relative bottom-0.2">
-                                        <Button className="hover:text-gray-300 text-muted-foreground text-white">know more</Button>
+                                        <Button className="hover:text-gray-300 text-muted-foreground text-white">
+                                            Know more
+                                        </Button>
                                     </div>
                                 </Card>
                             ))}
@@ -158,3 +172,4 @@ const Cards = () => {
 };
 
 export default Cards;
+export { cardData };  // Ensure cardData is exported

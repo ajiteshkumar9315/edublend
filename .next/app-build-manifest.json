@@ -12,10 +12,10 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/course/[id]/page": [
+    "/details/[id]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/course/[id]/page.js"
+      "static/chunks/app/details/[id]/page.js"
     ]
   }
 }

@@ -19,4 +19,13 @@ export interface Course {
     educator: string;
   }
 
+export interface DataItem {
+    id: number;
+    icon: React.JSX.Element;
+    title: string;
+    ratings: number;
+    popularity: number;
+    duration: string;
+    description: string;
+  }
   
